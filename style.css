@@ -124,10 +124,24 @@ main{
       width: 40%;
 }
 
+.stats-button{
+      border-radius: 2rem;
+      padding: 0.25rem 0.25rem 0.25rem 0.25rem;
+      text-align: center;
+      font-weight: 800;
+      letter-spacing: 1px;
+      text-transform: capitalize;
+      color: white;
+      
+}
 
+.easy, .medium, .hard{
+      background-color: rgb(0, 21, 255);
+}
 
-
-
+.completed, .in-progress, .coming-soon{
+      background-color: brown;
+}
 
 
 
@@ -169,7 +183,7 @@ main{
       opacity: 0;
 
       position: absolute;
-      bottom: -30%;
+      bottom: -20%;
       z-index: 100;
 
       font-weight: 800;
@@ -200,9 +214,16 @@ main{
       color: rgb(253, 34, 143);
 }
 #js-button{
-      color: rgb(255, 213, 0);
-      text-shadow: 0px 0px 2px black;
+      color: rgb(255, 225, 0);
+      letter-spacing: -7px;
+      text-shadow:  1px 1px 1px #000, -1px -1px 1px #000, 1px -1px 0 #000, -1px 1px 0 #000; 
+      transition: 0.4s all ease;
 }
+
+.tech-button:hover #js-button{
+      letter-spacing: 2px;
+}
+
 
 
 
@@ -214,5 +235,21 @@ main{
       font-weight: 700;
 }
 
-/* make the card -- html css ke hover effect add krne h and colors specify krne h 
-html ka orange , css ka blue , tailwind ka cyan etc .... */
+
+/* ADD 
+a information i icon on top of page to tell users about the basic terminologies 
+like easy medium hard   
+completed in progess or in future
+and some other info 
+
+
+write the css for these buttons 
+
+add multiple cards , atleast 8 cards ... 
+
+then make pages for the card .. 
+think about how you will make the pages , you will make entire new page and link 
+it or you will make a page in itself 
+means try to understand how websites with multiple pages are linked together
+
+*/
